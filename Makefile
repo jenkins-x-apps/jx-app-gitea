@@ -11,7 +11,7 @@ init:
 	helm init --client-only
 
 setup: init
-	helm repo add jenkinsxio https://chartmuseum.jenkins-x.io
+	helm repo add jenkinsxio https://storage.googleapis.com/chartmuseum.jenkins-x.io
 
 build: clean setup
 	rm -rf requirements.lock
